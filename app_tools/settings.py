@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     'subscriptions',
     'sessions_usage',
     'ai_voice',
+    'faq',
 ]
 
 MIDDLEWARE = [

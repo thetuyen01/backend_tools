@@ -12,11 +12,11 @@ class Migration(migrations.Migration):
 
     operations = [
         migrations.CreateModel(
-            name='IPUsage',
+            name='Faq',
             fields=[
-                ('ip_address', models.GenericIPAddressField(primary_key=True, serialize=False)),
-                ('free_sessions_used', models.PositiveIntegerField(default=0)),
-                ('last_usage_date', models.DateTimeField(auto_now=True)),
+                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
+                ('question', models.TextField()),
+                ('answer', models.TextField()),
             ],
         ),
     ]
